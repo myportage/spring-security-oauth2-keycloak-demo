@@ -33,4 +33,11 @@ build/
 .vscode/
 
 ### Node Modules ###
-!**/src/main/resources/frontend/node_modules
+**/src/main/resources/frontend/node_modules
+/oauth2-pkce-demo/src/main/resources/frontend/dist/frontend/3rdpartylicenses.txt
+/oauth2-pkce-demo/src/main/resources/frontend/dist/frontend/favicon.ico
+/oauth2-pkce-demo/src/main/resources/frontend/dist/frontend/index.html
+/oauth2-pkce-demo/src/main/resources/frontend/dist/frontend/main.efc2eef9d727cc958d0f.js
+/oauth2-pkce-demo/src/main/resources/frontend/dist/frontend/polyfills.7cbe13d915ebc05eb9f8.js
+/oauth2-pkce-demo/src/main/resources/frontend/dist/frontend/runtime.d02d7c1faa90da8028ea.js
+/oauth2-pkce-demo/src/main/resources/frontend/dist/frontend/styles.31d6cfe0d16ae931b73c.css
