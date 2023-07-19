@@ -1,0 +1,11 @@
+### Authorization by token, part 1. Retrieve and save token.
+POST http://localhost:8180/realms/oauth2-demo-realm/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id=oauth2-client-credentials&client_secret=NS2pyh7njjpGOdwbmew4tvVsBrvxGyxr
+
+{% client.global.set("auth_token", JSON.parse(response.body).access_token); %}
+
+### Authorization by token, part 2. Use token to authorize.
+GET http://localhost:8083/microservice1/home
+Authorization: Bearer {{auth_token}}
