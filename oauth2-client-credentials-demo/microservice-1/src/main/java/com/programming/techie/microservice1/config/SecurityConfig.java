@@ -1,4 +1,4 @@
-package com.programming.techie.pkce.Config;
+package com.programming.techie.microservice1.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

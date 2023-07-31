@@ -12,12 +12,12 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class Controller1 {
 
-    private final RestTemplate restTemplate= new RestTemplateBuilder().build();
+//    private final RestTemplate restTemplate= new RestTemplateBuilder().build();
 
     @GetMapping("/microservice1/home")
     @ResponseStatus(HttpStatus.OK)
     public String HelloRestTemplate(){
-        Jwt jwt = (Jwt) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        /*Jwt jwt = (Jwt) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 
         HttpHeaders httpHeaders= new HttpHeaders();
         httpHeaders.add("Authorization","Bearer "+jwt.getTokenValue());
@@ -27,6 +27,7 @@ public class Controller1 {
                 new HttpEntity<>(httpHeaders),
                 String.class);
 
-        return "PUY- Message from Microservice 2 is :"+ response.getBody();
+        return "PUY- Message from Microservice 2 is :"+ response.getBody();*/
+        return "Hello";
     }
 }
